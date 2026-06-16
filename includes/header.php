@@ -18,7 +18,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 <div class="topbar">
     <div class="container">
-        <div><i class="fa-solid fa-phone"></i>&nbsp; +250 788 001 002 &nbsp; | &nbsp; <i class="fa-solid fa-location-dot"></i>&nbsp; Kigali, Rwanda</div>
+        <div><i class="fa-solid fa-phone"></i>&nbsp; +250 788 123 456 &nbsp; | &nbsp; <i class="fa-solid fa-location-dot"></i>&nbsp; Kigali, Rwanda</div>
         <div>
             <?php if (isCustomerLoggedIn()): ?>
                 Welcome, <?= e($_SESSION['customer_name']) ?> | <a href="<?= $baseUrl ?? '' ?>account.php">My Account</a> | <a href="<?= $baseUrl ?? '' ?>logout.php">Logout</a>

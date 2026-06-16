@@ -75,7 +75,7 @@ require_once __DIR__ . '/includes/header.php';
                         <tr>
                             <td>
                                 <div class="cart-product">
-                                    <img src="assets/images/products/<?= e($p['image']) ?>" alt="<?= e($p['name']) ?>"
+                                    <img src="/assets/images/products/<?= e($p['image']) ?>" alt="<?= e($p['name']) ?>"
                                          onerror="this.src='https://placehold.co/60x60/e8f5e9/2e7d4f?text=%20'">
                                     <div>
                                         <strong><?= e($p['name']) ?></strong><br>

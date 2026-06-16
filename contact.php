@@ -50,7 +50,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="order-summary-box">
                 <h3>Get in Touch</h3>
                 <p style="margin-bottom:12px;"><i class="fa-solid fa-location-dot" style="color:var(--green);width:20px;"></i> KG 11 Ave, Kigali, Rwanda</p>
-                <p style="margin-bottom:12px;"><i class="fa-solid fa-phone" style="color:var(--green);width:20px;"></i> +250 788 001 002</p>
+                <p style="margin-bottom:12px;"><i class="fa-solid fa-phone" style="color:var(--green);width:20px;"></i> +250 788 123 456</p>
                 <p style="margin-bottom:12px;"><i class="fa-solid fa-envelope" style="color:var(--green);width:20px;"></i> info@freshmarketrwanda.rw</p>
                 <p style="margin-bottom:12px;"><i class="fa-solid fa-clock" style="color:var(--green);width:20px;"></i> Mon - Sat: 7:00 AM - 8:00 PM</p>
                 <p><i class="fa-solid fa-truck" style="color:var(--green);width:20px;"></i> Delivery available across Kigali and nearby districts</p>

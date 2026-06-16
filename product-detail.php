@@ -32,7 +32,7 @@ require_once __DIR__ . '/includes/header.php';
         </p>
 
         <div class="product-detail">
-            <img src="assets/images/products/<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>"
+            <img src="/assets/images/products/<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>"
                  onerror="this.src='https://placehold.co/500x400/e8f5e9/2e7d4f?text=<?= urlencode($product['name']) ?>'">
             <div>
                 <span class="product-category"><?= e($product['category_name']) ?></span>
@@ -65,7 +65,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="product-grid">
             <?php foreach ($related as $rp): ?>
                 <div class="product-card">
-                    <img src="assets/images/products/<?= e($rp['image']) ?>" alt="<?= e($rp['name']) ?>" class="product-img"
+                    <img src="/assets/images/products/<?= e($rp['image']) ?>" alt="<?= e($rp['name']) ?>" class="product-img">
                          onerror="this.src='https://placehold.co/300x200/e8f5e9/2e7d4f?text=<?= urlencode($rp['name']) ?>'">
                     <div class="product-info">
                         <h3 class="product-name"><?= e($rp['name']) ?></h3>

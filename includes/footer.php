@@ -28,7 +28,7 @@
                 <h4>Contact Us</h4>
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i> KG 11 Ave, Kigali, Rwanda</li>
-                    <li><i class="fa-solid fa-phone"></i> +250 788 001 002</li>
+                    <li><i class="fa-solid fa-phone"></i> +250 788 123 456</li>
                     <li><i class="fa-solid fa-envelope"></i> info@freshmarketrwanda.rw</li>
                     <li><i class="fa-solid fa-clock"></i> Mon - Sat: 7:00 AM - 8:00 PM</li>
                 </ul>

@@ -60,36 +60,52 @@ require_once __DIR__ . '/includes/header.php';
                 <h3>No products found</h3>
                 <p>Try a different search or category.</p>
             </div>
-        <?php else: ?>
-        <div class="product-grid">
-            <?php foreach ($products as $product): ?>
-                <div class="product-card">
-                    <?php if ($product['is_featured']): ?><span class="badge-featured">Featured</span><?php endif; ?>
-                    <img src="assets/images/products/<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>" class="product-img"
-                         onerror="this.src='https://placehold.co/300x200/e8f5e9/2e7d4f?text=<?= urlencode($product['name']) ?>'">
-                    <div class="product-info">
-                        <span class="product-category"><?= e($product['category_name']) ?></span>
-                        <h3 class="product-name"><?= e($product['name']) ?></h3>
-                        <div class="product-price"><?= formatPrice($product['price']) ?> <small>/ <?= e($product['unit']) ?></small></div>
-                        <?php if ($product['stock_quantity'] <= 0): ?>
-                            <p class="out-of-stock">Out of stock</p>
-                        <?php endif; ?>
-                        <div class="product-actions">
-                            <a href="product-detail.php?slug=<?= e($product['slug']) ?>" class="btn btn-outline btn-sm">View</a>
-                            <?php if ($product['stock_quantity'] > 0): ?>
+       <?php else: ?>
+    <div class="product-grid">
+        <?php foreach ($products as $product): ?>
+            <div class="product-card">
+
+                <?php if ($product['is_featured']): ?>
+                    <span class="badge-featured">Featured</span>
+                <?php endif; ?>
+
+                <img src="/assets/images/products/<?= e($product['image']) ?>"
+                     alt="<?= e($product['name']) ?>"
+                     class="product-img"
+                     onerror="this.src='https://placehold.co/300x200/e8f5e9/2e7d4f?text=<?= urlencode($product['name']) ?>'">
+
+                <div class="product-info">
+                    <span class="product-category"><?= e($product['category_name']) ?></span>
+
+                    <h3 class="product-name"><?= e($product['name']) ?></h3>
+
+                    <div class="product-price">
+                        <?= formatPrice($product['price']) ?>
+                        <small>/ <?= e($product['unit']) ?></small>
+                    </div>
+
+                    <?php if ($product['stock_quantity'] <= 0): ?>
+                        <p class="out-of-stock">Out of stock</p>
+                    <?php endif; ?>
+
+                    <div class="product-actions">
+                        <a href="product-detail.php?slug=<?= e($product['slug']) ?>"
+                           class="btn btn-outline btn-sm">View</a>
+
+                        <?php if ($product['stock_quantity'] > 0): ?>
                             <form action="cart.php" method="post">
                                 <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
                                 <input type="hidden" name="action" value="add">
-                                <button type="submit" class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+
+                                <button type="submit" class="btn btn-primary btn-sm btn-block">
+                                    Add to Cart
+                                </button>
                             </form>
-                            <?php endif; ?>
-                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </div>
-        <?php endif; ?>
-    </div>
-</section>
 
-<?php require_once __DIR__ . '/includes/footer.php'; ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>

@@ -58,7 +58,7 @@ require_once __DIR__ . '/includes/header.php';
             <?php foreach ($featuredProducts as $product): ?>
                 <div class="product-card">
                     <span class="badge-featured">Featured</span>
-                    <img src="assets/images/products/<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>" class="product-img"
+                    <img src="/assets/images/products/<?= e($product['image']) ?>" alt="<?= e($product['name']) ?>" class="product-img"
                          onerror="this.src='https://placehold.co/300x200/e8f5e9/2e7d4f?text=<?= urlencode($product['name']) ?>'">
                     <div class="product-info">
                         <span class="product-category"><?= e($product['category_name']) ?></span>
