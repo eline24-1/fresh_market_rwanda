@@ -4,10 +4,10 @@
  * Fresh Market Rwanda
  */
 
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db');
 define('DB_NAME', 'fresh_market_rwanda');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'root');
 
 try {
     $pdo = new PDO(
